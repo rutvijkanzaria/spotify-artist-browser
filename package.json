@@ -17,6 +17,7 @@
   "author": "Rutvij Kanzaria",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.15.3",
     "bootstrap": "^4.0.0-alpha.6",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"

@@ -1,6 +1,10 @@
 'use strict';
 
+// Dependencies
 import React, {Component} from 'react';
+import axios from 'axios';
+
+// Sytyes
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../styles/App.css';
 
@@ -11,6 +15,12 @@ class ArtistBrowser extends Component {
   handleSubmit = e => {
     e.preventDefault();
     let formValue = this.artistInput.value.split(" ").join('+');
+    axios.get(`https://api.spotify.com/v1/search?query=${formValue}&type=artist`)
+      .then(response => {
+        if(response.status === 200){
+          console.log(response.data.artists.items);
+        }
+      });
   }
 
   render() {
