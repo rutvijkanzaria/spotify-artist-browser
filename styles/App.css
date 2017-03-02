@@ -1,0 +1,25 @@
+.artist-list .row {
+	padding: 5px;
+	background: #eee;
+	margin: 10px 0;
+}
+
+.artist-img {
+	display: block;
+	margin: 0 auto;
+	max-height: 200px;
+}
+
+.genres{
+	margin-right: 10px;
+	font-weight: normal;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.view-albums-btn{
+  bottom: 0;
+  position: absolute;
+  display: block;
+  padding: 5px;
+}
