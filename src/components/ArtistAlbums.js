@@ -19,7 +19,6 @@ class ArtistAlbums extends Component {
   }
 
   loadTracks = albumId => {
-    console.log(albumId);
     axios.get(`https://api.spotify.com/v1/albums/${albumId}`)
     .then(response => {
       this.setState({

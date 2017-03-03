@@ -18,7 +18,7 @@ class Artist extends Component {
     this.state={
       artistDetails: {},
       artistAlbums: [],
-      tracks: []
+      tracks: [],
     }
   }
 
@@ -28,7 +28,7 @@ class Artist extends Component {
     axios.get(`https://api.spotify.com/v1/artists/${this.props.params.artistId}`)
     .then(res => {
       artistDetails = res.data;
-      axios.get(`https://api.spotify.com/v1/artists/${this.props.params.artistId}/albums`)
+      axios.get(`https://api.spotify.com/v1/artists/${this.props.params.artistId}/albums?limit=10&offset=0`)
       .then(res => {
         artistAlbums= res.data.items
         this.setState({
