@@ -17,7 +17,8 @@ class Artist extends Component {
     super(props);
     this.state={
       artistDetails: {},
-      artistAlbums: []
+      artistAlbums: [],
+      tracks: []
     }
   }
 
@@ -36,14 +37,13 @@ class Artist extends Component {
         })
       });
     });
-
   }
 
   render() {
     return (
       <div>
         <ArtistDetails artistDetails={this.state.artistDetails} />
-        <ArtistAlbums artistAlbums={this.state.artistAlbums} />
+        <ArtistAlbums loadTracks={this.loadTracks} artistAlbums={this.state.artistAlbums} />
       </div>
     );
   }

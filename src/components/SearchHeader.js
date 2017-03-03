@@ -42,7 +42,7 @@ class SearchHeader extends Component {
                     ref={input => {this.artistInput = input}}
                   />
                   <span className="input-group-btn">
-                    <button className="btn btn-secondary" type="submit">Search your Artist</button>
+                    <button className="btn btn-warning" type="submit">Search your Artist</button>
                   </span>
                 </div>
               </form>
