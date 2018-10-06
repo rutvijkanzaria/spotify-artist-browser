@@ -2,7 +2,7 @@
 Browser to search your favourite artists and their albums
 
 ## Setup Instructions
-Step 1 - `git clone https://github.com/rutvijkanzaria/turtle-puzzle.git`.
+Step 1 - `https://github.com/rutvijkanzaria/spotify-artist-browser.git`.
 
 Step 2 - run `npm install` for installing all dependencies. 
 
